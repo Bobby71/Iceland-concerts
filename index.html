@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta name="description" content="Iceland Concerts">
+  
+  
+  
+<script src="https://code.jquery.com/jquery.min.js"></script>
+
+  <link href="https://bootswatch.com/slate/bootstrap.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+  
+  
+  
+  
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+
+  <body ng-controller="main" class="container">
+    <div class="jumbotron">
+      <h1>WELCOME TO ICELAND!!</h1>
+    </div>
+    <div class="media" ng-repeat="concert in concerts">
+      <div class="media-left media-middle">
+        <a href="#">
+          <img class="media-object" src="{{concert. imageSource}}" height="100" alt="...">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">
+          {{concert.name}}</h4>
+        {{concert.dateOfShow}}
+      </div>
+    </div>
+</body>
+</html>
+
+
